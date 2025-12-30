@@ -1,12 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>我的私人網頁</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>David Xu | Personal Page</title>
   <meta name="robots" content="noindex, nofollow">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: #fdf9f3; /* 溫暖米白 */
+      color: #4b4b4b;
+      line-height: 1.65;
+      padding: 0;
+      margin: 0;
+    }
+    .container {
+      max-width: 760px;
+      margin: 50px auto;
+      padding: 32px;
+      background: #fffaf5; /* 淡奶油色卡片 */
+      border-radius: 20px;
+      box-shadow: 0 6px 24px rgba(140, 110, 90, 0.08);
+      border: 1px solid #f0e6da;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f9d8b5, #e8c3a8);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 44px;
+      color: #8b6b4f;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    h1 {
+      font-size: 28px;
+      margin: 12px 0 6px;
+      color: #5a4a42;
+      font-weight: 600;
+    }
+    .email {
+      color: #8b6b4f;
+      font-size: 16px;
+      margin-top: 4px;
+    }
+    .section-title {
+      font-size: 20px;
+      margin: 28px 0 18px;
+      padding-bottom: 6px;
+      color: #6b8e23; /* 溫暖綠 */
+      font-weight: 600;
+    }
+    .timeline,
+    .interests {
+      margin-left: 20px;
+    }
+    .timeline-item {
+      margin-bottom: 16px;
+      padding-left: 8px;
+      border-left: 2px solid #e8c3a8;
+      padding-bottom: 4px;
+    }
+    .year {
+      font-weight: 600;
+      color: #5a4a42;
+    }
+    .school {
+      margin-left: 8px;
+      color: #6b5b50;
+    }
+    .interests ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .interests li {
+      background: #f8f0e6;
+      padding: 8px 14px;
+      margin-bottom: 8px;
+      border-radius: 12px;
+      color: #5a4a42;
+      font-weight: 500;
+    }
+    footer {
+      text-align: center;
+      margin-top: 36px;
+      color: #a08c7c;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <h1>你好！這是我的私人網頁 😊</h1>
-  <p>只有拿到連結的人才能看到這裡。</p>
+  <div class="container">
+    <div class="header">
+      <div class="avatar">👤</div>
+      <h1>David Xu<br><small style="font-weight: normal; color: #8b6b4f;">徐镱维</small></h1>
+      <div class="email">xudavidzz0616@gmail.com</div>
+    </div>
+
+    <div class="section-title">🎓 Education & Research</div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="year">2020 – 2024</span>
+        <span class="school">B.S., University of Science and Technology of China (USTC)</span>
+      </div>
+      <div class="timeline-item">
+        <span class="year">2024 – Present</span>
+        <span class="school">X. Tsinghua University (THU) & UC Berkeley (UCB), EECS</span>
+      </div>
+      <div class="timeline-item">
+        <span class="year">Now</span>
+        <span class="school">Aoto, Institute of Automation, Chinese Academy of Sciences (CAS)</span>
+      </div>
+    </div>
+
+    <div class="section-title">🔍 Research Interests</div>
+    <div class="interests">
+      <ul>
+        <li>Deep Learning</li>
+        <li>Machine Learning</li>
+        <li>Embedded Systems</li>
+        <li>Robotics</li>
+      </ul>
+    </div>
+
+    <footer>
+      A quiet corner on the web — not indexed by search engines.
+    </footer>
+  </div>
 </body>
 </html>
